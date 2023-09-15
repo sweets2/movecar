@@ -4,7 +4,7 @@ import json
 import uuid
 from pathlib import Path
 import sys
-sys.path.append(str(Path(__file__).resolve().parent))
+sys.path.append (str(Path(__file__).resolve().parent))
 from app.config import get_secret_key, get_openweathermap_api_key, get_google_maps_api_key
 
 
