@@ -1,0 +1,480 @@
+Street
+Side
+Days & Hours
+Location
+Adams St.
+West
+Monday - 11 am to 12 noon
+Newark St. to Sixteenth St.
+Adams St.
+East
+Tuesday - 11 am to 12 noon
+Newark St. to Sixteenth St.
+Bloomfield St.
+East
+Monday - 11 am to 12 noon
+Observer Hwy. to north boundary
+Bloomfield St.
+West
+Tuesday - 11 am to 12 noon
+Observer Hwy. to north boundary
+Castle Point Terrace
+East
+Wednesday - 1 pm to 2 pm
+Eighth St. and Tenth St.
+Castle Point Terrace
+West
+Friday - 1 pm to 2 pm
+Eighth St. to Tenth St.
+Clinton St.
+West
+Monday - 9 am to 10 am
+Newark St. to Seventeenth St.
+Clinton St.
+East
+Tuesday - 9 am to 10 am
+Newark St. to Seventeenth St.
+Eighth St.
+North
+Wednesday - 3 pm to 4 pm
+Willow Ave. to Jackson St.
+Eighth St.
+South
+Wednesday - 1 pm to 2 pm
+East boundary to Willow Ave.
+Eighth St.
+North
+Friday - 1 pm to 2 pm
+East boundary to Willow Ave.
+Eighth St.
+South
+Friday - 3 pm to 4 pm
+Willow Ave. to Jackson St.
+Eleventh St.
+North
+Tuesday - 10 am to 11 am
+Hudson St. to Willow Ave.
+Eleventh St.
+South
+Wednesday - 2 pm to 3 pm
+Willow Ave. to Hudson St.
+Eleventh St.
+South
+Thursday - 3 pm to 4 pm
+Willow Ave. to Monroe St.
+Eleventh St.
+North
+Friday - 3 pm to 4 pm
+Willow Ave. to Monroe St.
+Fifteenth St.
+South
+Wednesday - 3 pm to 4 pm
+Park Ave. to Madison St.
+Fifteenth St.
+North
+Friday - 3 pm to 4 pm
+Park Ave. to Madison St.
+Fifteenth St.
+South
+Wednesday - 3 pm to 4 pm
+Sinatra Drive to Park Ave.
+Fifth St.
+North
+Monday - 3 pm to 4 pm
+Jackson St. to Grand St.
+Fifth St.
+South
+Tuesday - 3 pm to 4 pm
+Jackson St. to Grand St.
+Fifth St.
+North
+Wednesday - 11 am to 12 noon
+Clinton St. to Sinatra Drive
+Fifth St.
+South
+Thursday - 11 am to 12 noon
+Clinton St. to Sinatra Drive
+First St.
+North
+Monday - 2 pm to 3 pm
+Marshall St. to Willow Ave.
+First St.
+South
+Tuesday - 2 pm to 3 pm
+Marshall St. to Willow Ave.
+First St.
+North
+Wednesday - 10 am to 11 am
+River St. to Willow Ave.
+First St.
+South
+Thursday - 10 am to 11 am
+Willow Ave. to River St.
+Fourteenth St.
+South
+Monday - 8 am to 9 am
+Willow Ave. to Hudson St.
+Fourteenth St.
+North
+Wednesday - 8 am to 9 am
+Hudson St. to Willow Ave.
+Fourth St.
+North
+Monday - 3 pm to 4 pm
+Willow Ave. to Harrison St.
+Fourth St.
+South
+Tuesday - 3 pm to 4 pm
+Willow Ave. to Harrison St.
+Fourth St.
+North
+Wednesday - 11 am to 12 noon
+River St. to Willow Ave.
+Fourth St.
+South
+Thursday - 11 am to 12 noon
+River St. to Willow Ave.
+Garden St.
+East
+Monday - 2 pm to 3 pm
+Fourteenth St. to Observer Hwy.
+Garden St.
+West
+Tuesday - 2 pm to 3 pm
+Fourteenth St. to Observer Hwy.
+Grand St.
+East
+Thursday - 1 pm to 2 pm
+Sixteenth St. to Newark St.
+Grand St.
+West
+Friday - 1 pm to 2 pm
+Sixteenth St. to Newark St.
+Grand St.
+East
+Thursday - 2 pm to 3 pm
+Eleventh St. to Tenth St.
+Grand St.
+West
+Wednesday - 2 pm to 3 pm
+Eleventh St. to Tenth St.
+Grove St.
+Both
+Monday - 1 pm to 2 pm
+Newark St. to the south boundary
+Harrison St.
+East
+Monday - 3 pm to 4 pm
+Fifth St. to the northern boundary
+Harrison St.
+East
+Thursday - 2 pm to 3 pm
+Fourth St. to Newark St.
+Harrison St.
+West
+Friday - 2 pm to 3 pm
+Fourth St. to Newark St.
+Henderson St.
+Both
+Monday - 1 pm to 2 pm
+Newark St. to south boundary
+Hudson Place
+South
+Thursday - 8 am to 9 am
+Hudson St. to east boundary
+Hudson Place
+North
+Friday - 8 am to 9 am
+Hudson St. to east boundary
+Hudson St.
+West
+Wednesday - 10 am to 11 am
+Fourteenth St. to Observer Hwy.
+Hudson St.
+East
+Friday - 10 am to 11 am
+Fourteenth St. to Observer Hwy.
+Hudson St.
+East
+Friday - 10 am to 11 am
+Fourteenth St. to Fifteenth St.
+Hudson St.
+West
+Wednesday - 10 am to 11 am
+Fourteenth St. to Fifteenth St.
+Jackson St.
+East
+Thursday - 2 pm to 3 pm
+Newark St. to north boundary
+Jackson St.
+West
+Friday - 2 pm to 3 pm
+Newark St. to north boundary
+Jefferson St.
+East
+Thursday - 10 am to 11 am
+Sixteenth St. to Observer Hwy.
+Jefferson St.
+West
+Friday - 10 am to 11 am
+Sixteenth St. to Observer Hwy.
+Madison St.
+East
+Thursday - 9 am to 10 am
+Newark St. to Fifteenth St.
+Madison St.
+West
+Friday - 9 am to 10 am
+Newark St. to Fifteenth St.
+Marshall St.
+West
+Thursday - 2 pm to 3 pm
+First St. to Second St.
+Marshall St.
+East
+Monday- 2pm to 3pm
+First St. to Second St.
+Monroe St.
+West
+Monday - 1 pm to 2 pm
+Eleventh St. to Newark St.
+Monroe St.
+East
+Tuesday - 1 pm to 2 pm
+Eleventh St. to Newark St.
+Newark St.
+Both
+Monday - 1 pm to 2 pm
+Henderson St. to west boundary
+Newark St.
+South
+Thursday - 8 am to 9 am
+Washington St. to east boundary
+Newark St.
+South
+Thursday - 10 am to 11 am
+Washington St. to Willow Ave.
+Newark St.
+South
+Thursday - 11 am to 12 noon
+Willow Ave. to Jefferson St.
+Newark St.
+North
+Friday - 11 am to 12 noon
+Washington St. to Jefferson St.
+Newark St.
+North
+Friday - 8 am to 9 am
+Washington St. to north boundary
+Ninth St.
+South
+Wednesday - 3 pm to 4 pm
+Jackson St. to Willow Ave.
+Ninth St.
+North
+Wednesday - 1 pm to 2 pm
+Willow Ave. to east boundary
+Ninth St.
+North
+Friday - 3 pm to 4 pm
+Jackson St. to Willow Ave.
+Ninth St.
+South
+Friday - 1 pm to 2 pm
+Willow Ave. to east boundary
+Observer Hwy.
+Both
+Thursday - 11 am to 12 noon
+Jefferson St. to Monroe St.
+Observer Hwy.
+Both
+Friday - 11 am to 12 noon
+Hudson St. to Henderson St.
+Park Ave.
+East
+Monday - 1 pm to 2 pm
+Observer Hwy. to Fourteenth St.
+Park Ave.
+West
+Tuesday - 1 pm to 2 pm
+Observer Hwy. to Fourteenth St.
+Paterson Ave.
+Both
+Thursday - 11 am to 12 noon
+Monroe St. to west boundary
+River St.
+Both
+Tuesday - 8 am to 9 am
+Hudson Place to Fourth St.
+River Terrace
+East
+Wednesday - 11 am to 12 noon
+Fifth St. to Seventh St.
+River Terrace
+West
+Thursday - 1 pm to 2 pm
+Fifth St. to Seventh St.
+Second St.
+North
+Monday - 2 pm to 3 pm
+Willow Ave. to Marshall St.
+Second St.
+South
+Tuesday - 2 pm to 3 pm
+Willow Ave. to Marshall St.
+Second St.
+North
+Wednesday - 10 am to 11 am
+River St. to Willow Ave.
+Second St.
+South
+Thursday - 10 am to 11 am
+River St. to Willow Ave.
+Seventh St.
+North
+Wednesday - 11 am to 12 noon
+Willow Ave. to Hudson St.
+Seventh St.
+South
+Wednesday - 3 pm to 4 pm
+Jackson St. to Willow Ave.
+Seventh St.
+South
+Thursday - 1 pm to 2 pm
+Willow Ave. to Hudson St.
+Seventh St.
+North
+Friday - 3 pm to 4 pm
+Jackson St. to Willow Ave.
+Sinatra Drive
+East
+Monday - 10 am to 11 am
+Newark St. to Eleventh St.
+Sinatra Drive
+West
+Wednesday - 8 am to 9 am
+Eleventh St. to Fourth St.
+Sixteenth St.
+South
+Wednesday - 3 pm to 4 pm
+West boundary to Park Ave.
+Sixteenth St.
+North
+Friday - 3 pm to 4 pm
+West boundary to Park Ave.
+Sixth St.
+North
+Monday - 3 pm to 4 pm
+Willow Ave. to west boundary
+Sixth St.
+South
+Tuesday - 3 pm to 4 pm
+Willow Ave. to west boundary
+Sixth St.
+North
+Wednesday - 11 am to 12 noon
+Willow Ave. to east boundary
+Sixth St.
+South
+Thursday - 1 pm to 2 pm
+Willow Ave. to east boundary
+Tenth St.
+South
+Wednesday - 2 pm to 3 pm
+Hudson St. to Madison St.
+Tenth St.
+North
+Thursday - 2 pm to 3 pm
+Hudson St. to Madison St.
+Tenth St.
+South
+Wednesday - 2 pm to 3 pm
+Clinton St. to Grand St.
+Tenth St.
+North
+Thursday - 2 pm to 3 pm
+Clinton St. to Grand St.
+Third St.
+North
+Monday - 2 pm to 3 pm
+Jackson St. to Willow Ave.
+Third St.
+South
+Tuesday - 2 pm to 3 pm
+Jackson St. to Willow Ave.
+Third St.
+North
+Wednesday - 11 am to 12 noon
+Willow Ave. to River St.
+Third St.
+South
+Thursday - 11 am to 12 noon
+Willow Ave. to River St.
+Thirteenth St.
+North
+Tuesday - 10 am to 11 am
+Hudson St. to Willow Ave.
+Thirteenth St.
+South
+Wednesday - 2 pm to 3 pm
+Hudson St. to Willow Ave.
+Thirteenth St.
+South
+Thursday - 3 pm to 4 pm
+Willow Ave. to Madison St.
+Thirteenth St.
+North
+Friday - 3 pm to 4 pm
+Willow Ave. to Madison St.
+Twelfth St.
+North
+Tuesday - 10 am to 11 am
+Willow Ave. to Hudson St.
+Twelfth St.
+South
+Wednesday - 2 pm to 3 pm
+Willow Ave. to Hudson St.
+Twelfth St.
+South
+Thursday - 3 pm to 4 pm
+West boundary to Willow Ave.
+Twelfth St.
+North
+Friday - 3 pm to 4 pm
+West boundary to Willow Ave.
+Vezzetti Way
+South
+Monday - 8 am to 9 am
+Henderson St. to Washington St.
+Vezzetti Way
+North
+Tuesday - 8 am to 9 am
+Henderson St. to Washington St.
+Washington St.
+East
+Monday through Friday - 8 am to 9 am
+Observer Hwy. to north boundary
+Washington St.
+West
+Monday through Friday - 8 am to 9 am
+Newark St. to Seventh St.
+Washington St.
+West
+Monday through Friday - 9 am to 10 am
+Eighth St. to Fifteenth St.
+Washington St.
+West
+Monday through Friday - 8 am to 9 am
+Observer Hwy. to Eighth St.
+Willow Ave.
+West
+Monday - 10 am to 11 am
+Fourteenth St. to Observer Hwy.
+Willow Ave.
+East
+Tuesday - 10 am to 11 am
+Fourteenth St. to Observer Hwy.
+Willow Ave.
+Both
+Wednesday - 8 am to 9 am
+Fourteenth St. to north boundary

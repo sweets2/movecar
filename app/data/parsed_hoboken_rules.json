@@ -1,0 +1,716 @@
+[
+    {
+        "Street": "Adams St.",
+        "Side": "West",
+        "Days & Hours": "Monday - 11 am to 12 noon",
+        "Location": "Newark St. to Sixteenth St."
+    },
+    {
+        "Street": "Adams St.",
+        "Side": "East",
+        "Days & Hours": "Tuesday - 11 am to 12 noon",
+        "Location": "Newark St. to Sixteenth St."
+    },
+    {
+        "Street": "Bloomfield St.",
+        "Side": "East",
+        "Days & Hours": "Monday - 11 am to 12 noon",
+        "Location": "Observer Hwy. to north boundary"
+    },
+    {
+        "Street": "Bloomfield St.",
+        "Side": "West",
+        "Days & Hours": "Tuesday - 11 am to 12 noon",
+        "Location": "Observer Hwy. to north boundary"
+    },
+    {
+        "Street": "Castle Point Terrace",
+        "Side": "East",
+        "Days & Hours": "Wednesday - 1 pm to 2 pm",
+        "Location": "Eighth St. and Tenth St."
+    },
+    {
+        "Street": "Castle Point Terrace",
+        "Side": "West",
+        "Days & Hours": "Friday - 1 pm to 2 pm",
+        "Location": "Eighth St. to Tenth St."
+    },
+    {
+        "Street": "Clinton St.",
+        "Side": "West",
+        "Days & Hours": "Monday - 9 am to 10 am",
+        "Location": "Newark St. to Seventeenth St."
+    },
+    {
+        "Street": "Clinton St.",
+        "Side": "East",
+        "Days & Hours": "Tuesday - 9 am to 10 am",
+        "Location": "Newark St. to Seventeenth St."
+    },
+    {
+        "Street": "Eighth St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Jackson St."
+    },
+    {
+        "Street": "Eighth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 1 pm to 2 pm",
+        "Location": "East boundary to Willow Ave."
+    },
+    {
+        "Street": "Eighth St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 1 pm to 2 pm",
+        "Location": "East boundary to Willow Ave."
+    },
+    {
+        "Street": "Eighth St.",
+        "Side": "South",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Jackson St."
+    },
+    {
+        "Street": "Eleventh St.",
+        "Side": "North",
+        "Days & Hours": "Tuesday - 10 am to 11 am",
+        "Location": "Hudson St. to Willow Ave."
+    },
+    {
+        "Street": "Eleventh St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 2 pm to 3 pm",
+        "Location": "Willow Ave. to Hudson St."
+    },
+    {
+        "Street": "Eleventh St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Monroe St."
+    },
+    {
+        "Street": "Eleventh St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Monroe St."
+    },
+    {
+        "Street": "Fifteenth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 3 pm to 4 pm",
+        "Location": "Park Ave. to Madison St."
+    },
+    {
+        "Street": "Fifteenth St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "Park Ave. to Madison St."
+    },
+    {
+        "Street": "Fifteenth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 3 pm to 4 pm",
+        "Location": "Sinatra Drive to Park Ave."
+    },
+    {
+        "Street": "Fifth St.",
+        "Side": "North",
+        "Days & Hours": "Monday - 3 pm to 4 pm",
+        "Location": "Jackson St. to Grand St."
+    },
+    {
+        "Street": "Fifth St.",
+        "Side": "South",
+        "Days & Hours": "Tuesday - 3 pm to 4 pm",
+        "Location": "Jackson St. to Grand St."
+    },
+    {
+        "Street": "Fifth St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 11 am to 12 noon",
+        "Location": "Clinton St. to Sinatra Drive"
+    },
+    {
+        "Street": "Fifth St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 11 am to 12 noon",
+        "Location": "Clinton St. to Sinatra Drive"
+    },
+    {
+        "Street": "First St.",
+        "Side": "North",
+        "Days & Hours": "Monday - 2 pm to 3 pm",
+        "Location": "Marshall St. to Willow Ave."
+    },
+    {
+        "Street": "First St.",
+        "Side": "South",
+        "Days & Hours": "Tuesday - 2 pm to 3 pm",
+        "Location": "Marshall St. to Willow Ave."
+    },
+    {
+        "Street": "First St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 10 am to 11 am",
+        "Location": "River St. to Willow Ave."
+    },
+    {
+        "Street": "First St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 10 am to 11 am",
+        "Location": "Willow Ave. to River St."
+    },
+    {
+        "Street": "Fourteenth St.",
+        "Side": "South",
+        "Days & Hours": "Monday - 8 am to 9 am",
+        "Location": "Willow Ave. to Hudson St."
+    },
+    {
+        "Street": "Fourteenth St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 8 am to 9 am",
+        "Location": "Hudson St. to Willow Ave."
+    },
+    {
+        "Street": "Fourth St.",
+        "Side": "North",
+        "Days & Hours": "Monday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Harrison St."
+    },
+    {
+        "Street": "Fourth St.",
+        "Side": "South",
+        "Days & Hours": "Tuesday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Harrison St."
+    },
+    {
+        "Street": "Fourth St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 11 am to 12 noon",
+        "Location": "River St. to Willow Ave."
+    },
+    {
+        "Street": "Fourth St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 11 am to 12 noon",
+        "Location": "River St. to Willow Ave."
+    },
+    {
+        "Street": "Garden St.",
+        "Side": "East",
+        "Days & Hours": "Monday - 2 pm to 3 pm",
+        "Location": "Fourteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Garden St.",
+        "Side": "West",
+        "Days & Hours": "Tuesday - 2 pm to 3 pm",
+        "Location": "Fourteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Grand St.",
+        "Side": "East",
+        "Days & Hours": "Thursday - 1 pm to 2 pm",
+        "Location": "Sixteenth St. to Newark St."
+    },
+    {
+        "Street": "Grand St.",
+        "Side": "West",
+        "Days & Hours": "Friday - 1 pm to 2 pm",
+        "Location": "Sixteenth St. to Newark St."
+    },
+    {
+        "Street": "Grand St.",
+        "Side": "East",
+        "Days & Hours": "Thursday - 2 pm to 3 pm",
+        "Location": "Eleventh St. to Tenth St."
+    },
+    {
+        "Street": "Grand St.",
+        "Side": "West",
+        "Days & Hours": "Wednesday - 2 pm to 3 pm",
+        "Location": "Eleventh St. to Tenth St."
+    },
+    {
+        "Street": "Grove St.",
+        "Side": "Both",
+        "Days & Hours": "Monday - 1 pm to 2 pm",
+        "Location": "Newark St. to the south boundary"
+    },
+    {
+        "Street": "Harrison St.",
+        "Side": "East",
+        "Days & Hours": "Monday - 3 pm to 4 pm",
+        "Location": "Fifth St. to the northern boundary"
+    },
+    {
+        "Street": "Harrison St.",
+        "Side": "East",
+        "Days & Hours": "Thursday - 2 pm to 3 pm",
+        "Location": "Fourth St. to Newark St."
+    },
+    {
+        "Street": "Harrison St.",
+        "Side": "West",
+        "Days & Hours": "Friday - 2 pm to 3 pm",
+        "Location": "Fourth St. to Newark St."
+    },
+    {
+        "Street": "Henderson St.",
+        "Side": "Both",
+        "Days & Hours": "Monday - 1 pm to 2 pm",
+        "Location": "Newark St. to south boundary"
+    },
+    {
+        "Street": "Hudson Place",
+        "Side": "South",
+        "Days & Hours": "Thursday - 8 am to 9 am",
+        "Location": "Hudson St. to east boundary"
+    },
+    {
+        "Street": "Hudson Place",
+        "Side": "North",
+        "Days & Hours": "Friday - 8 am to 9 am",
+        "Location": "Hudson St. to east boundary"
+    },
+    {
+        "Street": "Hudson St.",
+        "Side": "West",
+        "Days & Hours": "Wednesday - 10 am to 11 am",
+        "Location": "Fourteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Hudson St.",
+        "Side": "East",
+        "Days & Hours": "Friday - 10 am to 11 am",
+        "Location": "Fourteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Hudson St.",
+        "Side": "East",
+        "Days & Hours": "Friday - 10 am to 11 am",
+        "Location": "Fourteenth St. to Fifteenth St."
+    },
+    {
+        "Street": "Hudson St.",
+        "Side": "West",
+        "Days & Hours": "Wednesday - 10 am to 11 am",
+        "Location": "Fourteenth St. to Fifteenth St."
+    },
+    {
+        "Street": "Jackson St.",
+        "Side": "East",
+        "Days & Hours": "Thursday - 2 pm to 3 pm",
+        "Location": "Newark St. to north boundary"
+    },
+    {
+        "Street": "Jackson St.",
+        "Side": "West",
+        "Days & Hours": "Friday - 2 pm to 3 pm",
+        "Location": "Newark St. to north boundary"
+    },
+    {
+        "Street": "Jefferson St.",
+        "Side": "East",
+        "Days & Hours": "Thursday - 10 am to 11 am",
+        "Location": "Sixteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Jefferson St.",
+        "Side": "West",
+        "Days & Hours": "Friday - 10 am to 11 am",
+        "Location": "Sixteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Madison St.",
+        "Side": "East",
+        "Days & Hours": "Thursday - 9 am to 10 am",
+        "Location": "Newark St. to Fifteenth St."
+    },
+    {
+        "Street": "Madison St.",
+        "Side": "West",
+        "Days & Hours": "Friday - 9 am to 10 am",
+        "Location": "Newark St. to Fifteenth St."
+    },
+    {
+        "Street": "Marshall St.",
+        "Side": "West",
+        "Days & Hours": "Thursday - 2 pm to 3 pm",
+        "Location": "First St. to Second St."
+    },
+    {
+        "Street": "Marshall St.",
+        "Side": "East",
+        "Days & Hours": "Monday- 2pm to 3pm",
+        "Location": "First St. to Second St."
+    },
+    {
+        "Street": "Monroe St.",
+        "Side": "West",
+        "Days & Hours": "Monday - 1 pm to 2 pm",
+        "Location": "Eleventh St. to Newark St."
+    },
+    {
+        "Street": "Monroe St.",
+        "Side": "East",
+        "Days & Hours": "Tuesday - 1 pm to 2 pm",
+        "Location": "Eleventh St. to Newark St."
+    },
+    {
+        "Street": "Newark St.",
+        "Side": "Both",
+        "Days & Hours": "Monday - 1 pm to 2 pm",
+        "Location": "Henderson St. to west boundary"
+    },
+    {
+        "Street": "Newark St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 8 am to 9 am",
+        "Location": "Washington St. to east boundary"
+    },
+    {
+        "Street": "Newark St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 10 am to 11 am",
+        "Location": "Washington St. to Willow Ave."
+    },
+    {
+        "Street": "Newark St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 11 am to 12 noon",
+        "Location": "Willow Ave. to Jefferson St."
+    },
+    {
+        "Street": "Newark St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 11 am to 12 noon",
+        "Location": "Washington St. to Jefferson St."
+    },
+    {
+        "Street": "Newark St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 8 am to 9 am",
+        "Location": "Washington St. to north boundary"
+    },
+    {
+        "Street": "Ninth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 3 pm to 4 pm",
+        "Location": "Jackson St. to Willow Ave."
+    },
+    {
+        "Street": "Ninth St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 1 pm to 2 pm",
+        "Location": "Willow Ave. to east boundary"
+    },
+    {
+        "Street": "Ninth St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "Jackson St. to Willow Ave."
+    },
+    {
+        "Street": "Ninth St.",
+        "Side": "South",
+        "Days & Hours": "Friday - 1 pm to 2 pm",
+        "Location": "Willow Ave. to east boundary"
+    },
+    {
+        "Street": "Observer Hwy.",
+        "Side": "Both",
+        "Days & Hours": "Thursday - 11 am to 12 noon",
+        "Location": "Jefferson St. to Monroe St."
+    },
+    {
+        "Street": "Observer Hwy.",
+        "Side": "Both",
+        "Days & Hours": "Friday - 11 am to 12 noon",
+        "Location": "Hudson St. to Henderson St."
+    },
+    {
+        "Street": "Park Ave.",
+        "Side": "East",
+        "Days & Hours": "Monday - 1 pm to 2 pm",
+        "Location": "Observer Hwy. to Fourteenth St."
+    },
+    {
+        "Street": "Park Ave.",
+        "Side": "West",
+        "Days & Hours": "Tuesday - 1 pm to 2 pm",
+        "Location": "Observer Hwy. to Fourteenth St."
+    },
+    {
+        "Street": "Paterson Ave.",
+        "Side": "Both",
+        "Days & Hours": "Thursday - 11 am to 12 noon",
+        "Location": "Monroe St. to west boundary"
+    },
+    {
+        "Street": "River St.",
+        "Side": "Both",
+        "Days & Hours": "Tuesday - 8 am to 9 am",
+        "Location": "Hudson Place to Fourth St."
+    },
+    {
+        "Street": "River Terrace",
+        "Side": "East",
+        "Days & Hours": "Wednesday - 11 am to 12 noon",
+        "Location": "Fifth St. to Seventh St."
+    },
+    {
+        "Street": "River Terrace",
+        "Side": "West",
+        "Days & Hours": "Thursday - 1 pm to 2 pm",
+        "Location": "Fifth St. to Seventh St."
+    },
+    {
+        "Street": "Second St.",
+        "Side": "North",
+        "Days & Hours": "Monday - 2 pm to 3 pm",
+        "Location": "Willow Ave. to Marshall St."
+    },
+    {
+        "Street": "Second St.",
+        "Side": "South",
+        "Days & Hours": "Tuesday - 2 pm to 3 pm",
+        "Location": "Willow Ave. to Marshall St."
+    },
+    {
+        "Street": "Second St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 10 am to 11 am",
+        "Location": "River St. to Willow Ave."
+    },
+    {
+        "Street": "Second St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 10 am to 11 am",
+        "Location": "River St. to Willow Ave."
+    },
+    {
+        "Street": "Seventh St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 11 am to 12 noon",
+        "Location": "Willow Ave. to Hudson St."
+    },
+    {
+        "Street": "Seventh St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 3 pm to 4 pm",
+        "Location": "Jackson St. to Willow Ave."
+    },
+    {
+        "Street": "Seventh St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 1 pm to 2 pm",
+        "Location": "Willow Ave. to Hudson St."
+    },
+    {
+        "Street": "Seventh St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "Jackson St. to Willow Ave."
+    },
+    {
+        "Street": "Sinatra Drive",
+        "Side": "East",
+        "Days & Hours": "Monday - 10 am to 11 am",
+        "Location": "Newark St. to Eleventh St."
+    },
+    {
+        "Street": "Sinatra Drive",
+        "Side": "West",
+        "Days & Hours": "Wednesday - 8 am to 9 am",
+        "Location": "Eleventh St. to Fourth St."
+    },
+    {
+        "Street": "Sixteenth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 3 pm to 4 pm",
+        "Location": "West boundary to Park Ave."
+    },
+    {
+        "Street": "Sixteenth St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "West boundary to Park Ave."
+    },
+    {
+        "Street": "Sixth St.",
+        "Side": "North",
+        "Days & Hours": "Monday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to west boundary"
+    },
+    {
+        "Street": "Sixth St.",
+        "Side": "South",
+        "Days & Hours": "Tuesday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to west boundary"
+    },
+    {
+        "Street": "Sixth St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 11 am to 12 noon",
+        "Location": "Willow Ave. to east boundary"
+    },
+    {
+        "Street": "Sixth St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 1 pm to 2 pm",
+        "Location": "Willow Ave. to east boundary"
+    },
+    {
+        "Street": "Tenth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 2 pm to 3 pm",
+        "Location": "Hudson St. to Madison St."
+    },
+    {
+        "Street": "Tenth St.",
+        "Side": "North",
+        "Days & Hours": "Thursday - 2 pm to 3 pm",
+        "Location": "Hudson St. to Madison St."
+    },
+    {
+        "Street": "Tenth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 2 pm to 3 pm",
+        "Location": "Clinton St. to Grand St."
+    },
+    {
+        "Street": "Tenth St.",
+        "Side": "North",
+        "Days & Hours": "Thursday - 2 pm to 3 pm",
+        "Location": "Clinton St. to Grand St."
+    },
+    {
+        "Street": "Third St.",
+        "Side": "North",
+        "Days & Hours": "Monday - 2 pm to 3 pm",
+        "Location": "Jackson St. to Willow Ave."
+    },
+    {
+        "Street": "Third St.",
+        "Side": "South",
+        "Days & Hours": "Tuesday - 2 pm to 3 pm",
+        "Location": "Jackson St. to Willow Ave."
+    },
+    {
+        "Street": "Third St.",
+        "Side": "North",
+        "Days & Hours": "Wednesday - 11 am to 12 noon",
+        "Location": "Willow Ave. to River St."
+    },
+    {
+        "Street": "Third St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 11 am to 12 noon",
+        "Location": "Willow Ave. to River St."
+    },
+    {
+        "Street": "Thirteenth St.",
+        "Side": "North",
+        "Days & Hours": "Tuesday - 10 am to 11 am",
+        "Location": "Hudson St. to Willow Ave."
+    },
+    {
+        "Street": "Thirteenth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 2 pm to 3 pm",
+        "Location": "Hudson St. to Willow Ave."
+    },
+    {
+        "Street": "Thirteenth St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Madison St."
+    },
+    {
+        "Street": "Thirteenth St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "Willow Ave. to Madison St."
+    },
+    {
+        "Street": "Twelfth St.",
+        "Side": "North",
+        "Days & Hours": "Tuesday - 10 am to 11 am",
+        "Location": "Willow Ave. to Hudson St."
+    },
+    {
+        "Street": "Twelfth St.",
+        "Side": "South",
+        "Days & Hours": "Wednesday - 2 pm to 3 pm",
+        "Location": "Willow Ave. to Hudson St."
+    },
+    {
+        "Street": "Twelfth St.",
+        "Side": "South",
+        "Days & Hours": "Thursday - 3 pm to 4 pm",
+        "Location": "West boundary to Willow Ave."
+    },
+    {
+        "Street": "Twelfth St.",
+        "Side": "North",
+        "Days & Hours": "Friday - 3 pm to 4 pm",
+        "Location": "West boundary to Willow Ave."
+    },
+    {
+        "Street": "Vezzetti Way",
+        "Side": "South",
+        "Days & Hours": "Monday - 8 am to 9 am",
+        "Location": "Henderson St. to Washington St."
+    },
+    {
+        "Street": "Vezzetti Way",
+        "Side": "North",
+        "Days & Hours": "Tuesday - 8 am to 9 am",
+        "Location": "Henderson St. to Washington St."
+    },
+    {
+        "Street": "Washington St.",
+        "Side": "East",
+        "Days & Hours": "Monday through Friday - 8 am to 9 am",
+        "Location": "Observer Hwy. to north boundary"
+    },
+    {
+        "Street": "Washington St.",
+        "Side": "West",
+        "Days & Hours": "Monday through Friday - 8 am to 9 am",
+        "Location": "Newark St. to Seventh St."
+    },
+    {
+        "Street": "Washington St.",
+        "Side": "West",
+        "Days & Hours": "Monday through Friday - 9 am to 10 am",
+        "Location": "Eighth St. to Fifteenth St."
+    },
+    {
+        "Street": "Washington St.",
+        "Side": "West",
+        "Days & Hours": "Monday through Friday - 8 am to 9 am",
+        "Location": "Observer Hwy. to Eighth St."
+    },
+    {
+        "Street": "Willow Ave.",
+        "Side": "West",
+        "Days & Hours": "Monday - 10 am to 11 am",
+        "Location": "Fourteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Willow Ave.",
+        "Side": "East",
+        "Days & Hours": "Tuesday - 10 am to 11 am",
+        "Location": "Fourteenth St. to Observer Hwy."
+    },
+    {
+        "Street": "Willow Ave.",
+        "Side": "Both",
+        "Days & Hours": "Wednesday - 8 am to 9 am",
+        "Location": "Fourteenth St. to north boundary"
+    }
+]
