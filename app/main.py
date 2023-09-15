@@ -1,4 +1,3 @@
-import os
 from flask import Flask, request, jsonify, render_template, session
 import json
 import uuid
@@ -31,14 +30,10 @@ def append_to_json(file_name, data):
     with open(file_name, "w") as json_file:
         json.dump(existing_data, json_file, indent=4)
 
-# Absolute path to parsed_hoboken_rules.json 
-main_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
-data_dir = os.path.join(main_dir,'data')
-parsed_hoboken_rules_file = os.path.join(data_dir, 'parsed_hoboken_rules.json')  # Form the full path
+parsed_hoboken_rules_file = BASE_DIR / 'data' / 'parsed_hoboken_rules.json' # Absolute path
 
 # Absolute path to user_data.json
-user_data_file = os.path.join(main_dir, 'user_data.json')
-
+user_data_file = BASE_DIR / 'data' / 'user_data.json' # Absolute path
 
 def load_hoboken_rules(filename):
     with open(filename, 'r', encoding='utf-8') as file:

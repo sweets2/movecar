@@ -2,7 +2,6 @@
 a dictionary in a JSON file. We run both the "scrape_website_hoboken" file
 and this file manually to make sure the rules are correct and accurate.
 If the rules are wrong in any way, this whole app is useless."""
-import os
 import json
 from app.main import BASE_DIR
 
@@ -19,7 +18,7 @@ def txt_to_json(txt_file_path, json_file_path):
     keys = []
     data = []
 
-    with open(txt_file_path, 'r') as txt_file:
+    with open(txt_file_path, 'r', encoding='utf-8') as txt_file:
         lines = [line.strip() for line in txt_file.readlines()]
 
         # Extract keys from first 4 rows of data
@@ -30,7 +29,7 @@ def txt_to_json(txt_file_path, json_file_path):
             entry = dict(zip(keys, lines[i:i+4]))
             data.append(entry)
 
-    with open(json_file_path, 'w') as json_file:
+    with open(json_file_path, 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, indent=4)
 
 
