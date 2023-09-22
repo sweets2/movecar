@@ -3,7 +3,7 @@
 This is a web app that helps people park in the City of Hoboken, the 4th most densely populated city in America. Parking in Hoboken is difficult. The city of Hoboken has weekly street cleaning on every street and this means all parked cars have to move or they give out tickets! Hoboken is also at sea level which means minor thunderstorms causes flooding in certain areas and major storms flood many areas.
 
 # Deployed here
-https://python27392.pythonanywhere.com/
+https://movecar.pythonanywhere.com/
 
 # The app
 
@@ -33,9 +33,9 @@ Here's how it works in more detail:
 You will need to create your own API keys from Openweathermap.org, Googlemaps, and create your own Flask secret key in a .env file in the main directory first.
 
 Example .env file:
-```GOOGLE_MAPS_API_KEY='abcdefg123'
+GOOGLE_MAPS_API_KEY='abcdefg123'
 OPENWEATHERMAP_API_KEY='abcdefg123
-SECRET_KEY='supersecretkey123'```
+SECRET_KEY='supersecretkey123'
 
 To run the project, use the following command in the virtual environment:
     ```

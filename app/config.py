@@ -15,6 +15,9 @@ def get_env_variable(name):
         error_msg = f"Missing expected environment variable {name}"
         raise EnvironmentError(error_msg) from exc
 
+def get_arcgis_api_key():
+    return get_env_variable('ARCGIS_API_KEY')
+
 def get_google_maps_api_key():
     return get_env_variable('GOOGLE_MAPS_API_KEY')
 
@@ -23,3 +26,5 @@ def get_openweathermap_api_key():
 
 def get_secret_key():
     return get_env_variable('SECRET_KEY')
+
+print(get_google_maps_api_key())

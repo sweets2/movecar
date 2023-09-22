@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Info</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0B0-uAZsI5KqUmBTMHJzbCTp5rLymFFk&callback=initMap">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Should You Move Your Car?</h1>
+
+    <label for="street">Street:</label>
+    <select id="street">
+        {% for street in streets %}
+            <option value="{{ street }}" {% if street == "Adams St." %}selected{% endif %}>{{ street }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="side">Side:</label>
+    <select id="side">
+        <!-- Options populated by JavaScript -->
+    </select>
+
+    <label for="location">Location:</label>
+    <select id="location">
+        <!-- Options populated by JavaScript -->
+    </select>
+
+    <h2>Move your car at this day and time or you'll get a ticket!</h2>
+    <p id="days-hours" style="color: red; font-weight: bold; font-size: 30px;"></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Update side when a street is selected
+        $('#street').on('change', function() {
+            let selected_street = $(this).val();
+            $.getJSON(`/get_side/${selected_street}`, function(data) {
+                updateDropdown('#side', data.side);
+            });
+        });
+
+        // Update locations when a side is selected
+        $('#side').on('change', function() {
+            let selected_street = $('#street').val();
+            let selected_side = $(this).val();
+            $.getJSON(`/get_data/${selected_street}/${selected_side}`, function(data) {
+                updateDropdown('#location', Object.keys(data));
+            });
+        });
+
+        // Update days & hours when a location is selected
+        $('#location').on('change', function() {
+            let selected_location = $(this).val();
+            let selected_street = $('#street').val();
+            let selected_side = $('#side').val();
+            $.getJSON(`/get_data/${selected_street}/${selected_side}`, function(data) {
+                $('#days-hours').text(data[selected_location]);
+            });
+        });
+
+        function updateDropdown(dropdownId, values) {
+            $(dropdownId).empty();
+            values.forEach(val => {
+                $(dropdownId).append(new Option(val, val));
+            });
+            $(dropdownId).trigger('change');  // Trigger change event
+        }
+
+        // Trigger change event for "Street" dropdown after defining the event handlers
+        $('#street').trigger('change');
+    });
+
+    </script>
+</body>
+</html>
+    
+
+<body>
+    <button onclick="getLocation()">Update my location</button>
+    <p><br>"Update Location" is simulating a front end of the application<!-- 
+    --> (which isn't yet created) which will return<!-- 
+    --> the user's address. It currently outputs your actual<!-- 
+    --> Latitude and Longitude with some accuracy. Once the feature is finished, <!-- 
+    --> it will autocomplete the dropdowns and be integrated with<!-- 
+    --> an interactive map overlay to visually see the street!
+    <p id="demo"></p>
+
+    <script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + lon;
+        var user_data = {
+//            'username': 'user1',  // Replace with actual username if creating logins
+            'latitude': lat,
+            'longitude': lon
+        };
+        fetch('/location', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(user_data),
+        })
+        .then(response => response.json())
+        .then(data => console.log(data));
+    }
+
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+        }
+    }
+    </script>
+</body>
+<body>
+
+    <div id="map" style="height:400px;width:100%;"></div>
+
+    <script>
+        var map, marker;
+
+        function initMap() {
+            var defaultLat = parseFloat("{{ latitude }}") || null;
+            var defaultLng = parseFloat("{{ longitude }}") || null;
+            var defaultLocation;
+
+            if (defaultLat && defaultLng) {
+                defaultLocation = { lat: defaultLat, lng: defaultLng };
+            } else {
+                defaultLocation = { lat: 40.743991, lng: -74.032363 };  // Defaults to ZIP 07030
+            }
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: defaultLocation
+            });
+
+            marker = new google.maps.Marker({
+                position: defaultLocation,
+                    map: map,
+                draggable: true
+            });
+
+            // Dragend Listener
+            marker.addListener('dragend', function(event) {
+                var lat = event.latLng.lat();
+                var lng = event.latLng.lng();
+
+                fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=AIzaSyB0B0-uAZsI5KqUmBTMHJzbCTp5rLymFFk`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.results && data.results[0]) {
+                        var address = data.results[0].formatted_address;
+                        console.log('Current Address:', address);
+
+                        // Sending address to Python backend
+                        fetch('/set_address', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ "address": address })
+                        });
+                    } else {
+                        console.log('No results found');
+                    }
+                })
+                .catch(error => console.log('Error:', error));
+            });
+    }
+    </script>
+
+</body>
+</html>

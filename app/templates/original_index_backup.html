@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Info</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ google_key }}">
+    </script> -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -80,4 +82,65 @@
     });
 
     </script>
+</body>  
+
+<!-- <body>
+
+    <div id="map" style="height:400px;width:100%;"></div>
+
+    <script>
+        var map, marker;
+
+        function initMap() {
+            var defaultLat = parseFloat("{{ latitude }}") || null;
+            var defaultLng = parseFloat("{{ longitude }}") || null;
+            var defaultLocation;
+
+            if (defaultLat && defaultLng) {
+                defaultLocation = { lat: defaultLat, lng: defaultLng };
+            } else {
+                defaultLocation = { lat: 40.743991, lng: -74.032363 };  // Defaults to ZIP 07030
+            }
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: defaultLocation
+            });
+
+            marker = new google.maps.Marker({
+                position: defaultLocation,
+                    map: map,
+                draggable: true
+            });
+
+            // Dragend Listener
+            marker.addListener('dragend', function(event) {
+                var lat = event.latLng.lat();
+                var lng = event.latLng.lng();
+
+                fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key={{ google_key }}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.results && data.results[0]) {
+                        var address = data.results[0].formatted_address;
+                        console.log('Current Address:', address);
+
+                        // Sending address to Python backend
+                        fetch('/set_address', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ "address": address })
+                        });
+                    } else {
+                        console.log('No results found');
+                    }
+                })
+                .catch(error => console.log('Error:', error));
+            });
+    }
+    </script> -->
+
+</body>
 </html>

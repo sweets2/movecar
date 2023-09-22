@@ -4,35 +4,19 @@ import uuid
 from pathlib import Path
 import sys
 sys.path.append (str(Path(__file__).resolve().parent))
-from app.config import get_secret_key, get_openweathermap_api_key, get_google_maps_api_key
-
+from app.config import get_secret_key, get_openweathermap_api_key, get_google_maps_api_key, get_arcgis_api_key
 
 app = Flask(__name__)
 
 BASE_DIR = Path(__file__).resolve().parent
 
+
 app.config['SECRET_KEY'] = get_secret_key()
 google_key = get_google_maps_api_key()
 openweather_key = get_openweathermap_api_key()
-
-def append_to_json(file_name, data):
-    try:
-        with open(file_name, "r") as json_file:
-            existing_data = json.load(json_file)
-    except (FileNotFoundError, json.JSONDecodeError):
-        existing_data = {}
-
-    username = data['username']
-    if username in existing_data:
-        print(f"Overwriting data for user {username}")
-    existing_data[username] = data
-
-    with open(file_name, "w") as json_file:
-        json.dump(existing_data, json_file, indent=4)
+arcgis_key = get_arcgis_api_key()
 
 parsed_hoboken_rules_file = BASE_DIR / 'data' / 'parsed_hoboken_rules.json' # Absolute path
-
-# Absolute path to user_data.json
 user_data_file = BASE_DIR / 'data' / 'user_data.json' # Absolute path
 
 def load_hoboken_rules(filename):
@@ -40,6 +24,22 @@ def load_hoboken_rules(filename):
         return json.load(file)
 
 hoboken_rules = load_hoboken_rules(parsed_hoboken_rules_file)
+
+
+def append_to_json(file_name, data):
+    try:
+        with open(file_name, "r", encoding='utf-8') as json_file:
+            existing_data = json.load(json_file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing_data = {}
+
+    username = data['username'] # to be replaced with user login
+    if username in existing_data:
+        print(f"Overwriting data for user {username}")
+    existing_data[username] = data
+
+    with open(file_name, "w", encoding='utf-8') as json_file:
+        json.dump(existing_data, json_file, indent=4)
 
 @app.route('/')
 def home():
@@ -49,7 +49,19 @@ def home():
         if value["Street"] not in seen:
             streets.append(value["Street"])
             seen.add(value["Street"])
-    return render_template('index.html', streets=streets)
+
+    session_id = session.get('username', str(uuid.uuid4()))
+    session['username'] = session_id
+
+    try:
+        with open(user_data_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        user_data = data.get(session_id, {})
+        street_address = data.get('street_address', None)
+    except FileNotFoundError:
+        street_address = None
+    
+    return render_template('index3.html', streets=streets, street_address=street_address, arcgis_key=arcgis_key)
 
 @app.route('/get_side/<street>', methods=['GET'])
 def get_side(street):
@@ -73,8 +85,6 @@ def get_rules(street, side, location):
 
 @app.route('/location', methods=['POST'])
 def update_location():
-    """This is simulating a front end of an application which would take the user accurate geolocation,
-    store that location, and check it against the street cleaning rules."""
     user_data = request.get_json()
     if 'username' not in session:
         session['username'] = str(uuid.uuid4().hex)  # Use a random session ID
@@ -82,6 +92,44 @@ def update_location():
     append_to_json(user_data_file, user_data)
 
     return jsonify({'status': 'success'}), 200
+
+@app.route('/set_address', methods=['POST'])
+def set_address():
+    # session_id = session.get('username', None)
+    # if not session_id:
+    #     return jsonify({"status": "failed", "message": "Session ID not found"})
+
+    # # new_data = request.json
+    # # new_address = new_data.get('address', None)
+
+    # # if new_address:
+    # #     try:
+    # #         with open(user_data_file, 'r', encoding='utf-8') as f:
+    # #             data = json.load(f)
+    # #     except FileNotFoundError:
+    # #         data = {}
+        
+    # #     user_data = data.get(session_id, {})
+    # #     user_data['address'] = new_address
+    # #     data[session_id] = user_data
+
+        # with open(user_data_file, 'w', encoding='utf-8') as f:
+        #     json.dump(data, f)
+
+    address = request.json.get('address', {})
+
+    with open(user_data_file, 'w', encoding='utf-8') as f:
+        json.dump(address, f)
+    return jsonify({'status': 'success'})
+
+@app.route('/get_addresses', methods=['GET'])
+def get_addresses():
+    # Read addresses from JSON file and return
+    with open(user_data_file, 'w', encoding='utf-8') as f:
+        addresses = json.load(f)
+    return jsonify(addresses)
+
+
 
 if __name__ == '__main__':
     # app.run
