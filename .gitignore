@@ -1,4 +1,3 @@
-# .gitignore
 
 # Ignore the entire venv directory
 venv/
@@ -8,3 +7,4 @@ __pycache__/
 *.pyc
 # Ignore keys stored locally
 .env
+
