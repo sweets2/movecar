@@ -26,5 +26,3 @@ def get_openweathermap_api_key():
 
 def get_secret_key():
     return get_env_variable('SECRET_KEY')
-
-print(get_google_maps_api_key())

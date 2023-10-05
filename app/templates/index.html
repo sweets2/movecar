@@ -1,83 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Street Info</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-    </style>
-</head>
+<html lang="en"></html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Street Info</title>
+        <style>
+            html, body, #viewDiv {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                font-family: Arial, sans-serif;
+            }
+            @keyframes flash {
+                0%, 100% { background-color: transparent; }
+                50% { background-color: rgba(255, 255, 0, 0.658); }
+            }
+            .esri-locate {
+                animation: flash 1s;
+                animation-iteration-count: 5;
+            }
+        </style>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/light/main.css">
+        <script src="https://js.arcgis.com/4.27/"></script>
+        
+        <script>
+            var arcgis_key = "{{ arcgis_key }}";
+            var check_lightrain_forecast = "{{check_lightrain_forecast}}"
+            var check_thunderstorm_forecast = "{{check_thunderstorm_forecast}}"
+        </script>        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    </head>
+    <body>
+        <h1>Should You Move Your Car?</h1>
 
+        <label for="street">Street:</label>
+        <select id="street">
+            {% for street in streets %}
+                <option value="{{ street }}" {% if street == "Adams St." %}selected{% endif %}>{{ street }}</option>
+            {% endfor %}
+        </select>
+    
+        <label for="side">Side:</label>
+        <select id="side">
+            <!-- Options populated in main.py -->
+        </select>
+    
+        <label for="location">Location:</label>
+        <select id="location">
+            <!-- Options populated in main.py-->
+        </select>
+        
+        <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px; box-shadow: 0px 0px 10px #aaa; margin-top: 20px;">
+            <p style="font-size: 20px; font-weight: bold;">Move your car at this day and time or you'll get a ticket!</p>
+            <p id="days-hours" style="color: red; font-weight: bold; font-size: 30px;"></p>
+            </div>
 
-<body>
-    <h1>Should You Move Your Car?</h1>
+        <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px; box-shadow: 0px 0px 10px #aaa; margin-top: 20px;">
+            <p style="font-size: 20px; font-weight: bold;">{{check_lightrain_forecast}}</p>
+            <p style="font-size: 20px; font-weight: bold;">{{check_thunderstorm_forecast}}</p>
+            </div>
+        <p style="font-style: italic;">Please use the map below to verify your inputted address is correct.</p>
 
-    <label for="street">Street:</label>
-    <select id="street">
-        {% for street in streets %}
-            <option value="{{ street }}" {% if street == "Adams St." %}selected{% endif %}>{{ street }}</option>
-        {% endfor %}
-    </select>
+        
+        <div id="viewDiv"></div>
 
-    <label for="side">Side:</label>
-    <select id="side">
-        <!-- Options populated by JavaScript -->
-    </select>
-
-    <label for="location">Location:</label>
-    <select id="location">
-        <!-- Options populated by JavaScript -->
-    </select>
-
-    <h2>Move your car at this day and time or you'll get a ticket!</h2>
-    <p id="days-hours" style="color: red; font-weight: bold; font-size: 30px;"></p>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        // Update side when a street is selected
-        $('#street').on('change', function() {
-            let selected_street = $(this).val();
-            $.getJSON(`/get_side/${selected_street}`, function(data) {
-                updateDropdown('#side', data.side);
-            });
-        });
-
-        // Update locations when a side is selected
-        $('#side').on('change', function() {
-            let selected_street = $('#street').val();
-            let selected_side = $(this).val();
-            $.getJSON(`/get_data/${selected_street}/${selected_side}`, function(data) {
-                updateDropdown('#location', Object.keys(data));
-            });
-        });
-
-        // Update days & hours when a location is selected
-        $('#location').on('change', function() {
-            let selected_location = $(this).val();
-            let selected_street = $('#street').val();
-            let selected_side = $('#side').val();
-            $.getJSON(`/get_data/${selected_street}/${selected_side}`, function(data) {
-                $('#days-hours').text(data[selected_location]);
-            });
-        });
-
-        function updateDropdown(dropdownId, values) {
-            $(dropdownId).empty();
-            values.forEach(val => {
-                $(dropdownId).append(new Option(val, val));
-            });
-            $(dropdownId).trigger('change');  // Trigger change event
-        }
-
-        // Trigger change event for "Street" dropdown after defining the event handlers
-        $('#street').trigger('change');
-    });
-
-    </script>
+    </body>
 </html>

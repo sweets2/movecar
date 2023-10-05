@@ -17,4 +17,9 @@ if username in existing_data:
     print(f"Overwriting data for user {username}")
 # existing_data[username] = data
 
-print(data2['username'])
+
+
+rain = ['a']
+
+if not rain:
+    print("List is empty")
