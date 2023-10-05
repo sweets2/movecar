@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template, session
-# from flask_apscheduler import APScheduler
+
 import json
 import uuid
 from pathlib import Path
@@ -9,15 +9,10 @@ from app.config import get_secret_key, get_openweathermap_api_key, get_google_ma
 from app.scripts.weather_script import get_weather_forecast, open_forecast_file, check_lightrain_forecast, check_thunderstorm_forecast, today, tomorrow
 
 
-# class Config:
-#     SCHEDULER_API_ENABLED = True
+
 
 app = Flask(__name__)
-# app.config.from_object(Config())
 
-# scheduler = APScheduler()
-# scheduler.init_app(app)
-# scheduler.start()
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -31,10 +26,7 @@ parsed_hoboken_rules_file = BASE_DIR / 'data' / 'parsed_hoboken_rules.json' # Ab
 user_data_file = BASE_DIR / 'data' / 'user_data.json' # Absolute path
 
 
-# @app.before_first_request # pylint: disable=no-member
-# def schedule_task():
-#     """Run Openweather API get request every hour to get updated weather in JSON file."""
-#     scheduler.add_job(id='hourly_update', func=get_weather_forecast(), trigger='interval', hours=1)
+
 
 
 
